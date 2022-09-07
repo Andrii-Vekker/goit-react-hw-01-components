@@ -1,12 +1,13 @@
 import './App.css';
-import Profile from './components/profile';
-import Statistics from "./components/Statistics"
+// import {} from 'styled-components'
+import Profile from './components/profile/profile';
+import Statistics from "./components/statistics/Statistics"
 import user from "./user.json"
 import data from "./data.json"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Profile 
         key={1}
         username={user.username}
