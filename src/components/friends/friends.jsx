@@ -16,4 +16,12 @@ export default function FriendsList({ friends }) {
         </Box>
     );   
     
+};
+
+
+FriendsList.propTypes = {
+    isOnline: PropTypes.bool,
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    id: PropTypes.number
 }

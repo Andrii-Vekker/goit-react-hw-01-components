@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Box } from "components/Box";
 import { StatsTitle, InfoBox, Info } from "../statistics/statistics.styled";
 import getRandomHexColor from "components/randomColors";
@@ -18,4 +18,11 @@ export default function Statistics({dataStat}) {
         </Box>
     
     );
+};
+
+Statistics.propTypes = {
+    id: PropTypes.string,
+    label: PropTypes.string,
+    percentage: PropTypes.number
+
 };
