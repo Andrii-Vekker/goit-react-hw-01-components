@@ -1,35 +1,35 @@
 import image from "./logo192.png";
 import PropTypes from 'prop-types';
 import { Box } from "components/Box";
-import { Card, UserPhoto, Stats, StatsItem } from "./profile.styled";
+import { Card, UserPhoto, Stats, StatsItem, Title, Info } from "./profile.styled";
 
 
 
 export default function Profile({username, tag, location, avatar=image, stats}) {
     return (
-        <Box bg="background" width="200px" p={4}>
+        <Box bg="background" width="250px" p={4}>
             <Card>
                 <UserPhoto
                     src={avatar}
                     alt="UserPhoto"
                 />
-                <p>{username}</p>
-                <p>@{tag}</p>
-                <p>{location}</p>
+                <Title>{username}</Title>
+                <Info>@{tag}</Info>
+                <Info>{location}</Info>
             </Card>
 
             <Stats>
                 <StatsItem>
                     <span>Followers</span>
-                    <span>{stats.followers}</span>
+                    <span style={{fontWeight: "bold"}}>{stats.followers}</span>
                 </StatsItem>
                 <StatsItem>
                     <span>Views</span>
-                    <span>{stats.views}</span>
+                    <span style={{fontWeight: "bold"}}>{stats.views}</span>
                 </StatsItem>
                 <StatsItem>
                     <span >Likes</span>
-                    <span>{stats.likes}</span>
+                    <span style={{fontWeight: "bold"}}>{stats.likes}</span>
                 </StatsItem>
             </Stats>
         </Box>
