@@ -41,4 +41,7 @@ export const theme = {
     lg: '16px',
     round: '50%',
   },
+  shadows: {
+    shadow: `10px 11px 38px -1px rgba(0,0,0,0.75)`,
+  },
 };

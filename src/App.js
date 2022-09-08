@@ -2,8 +2,10 @@ import './App.css';
 // import {} from 'styled-components'
 import Profile from './components/profile/profile';
 import Statistics from "./components/statistics/Statistics"
+import FriendsList from 'components/friends/friends';
 import user from "./user.json"
 import data from "./data.json"
+import friends from "./friends.json"
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       <Statistics
        dataStat = {data}
       />
+      <FriendsList friends={friends}/>
     </div>
   );
 };
