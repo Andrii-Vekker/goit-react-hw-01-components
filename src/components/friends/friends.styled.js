@@ -14,25 +14,29 @@ width: 250px;
   align-items: center;
   margin-bottom: 15px;
   margin-left: 10px;
-  padding: 10px
-
+  padding: 10px;
+  :hover{
+    background-color:${p => p.theme.colors.primary};
+    scale: 1.1;
   
-`
+  }
+
+`;
 
 export const IsOnlineChecker = styled.span`
 border-radius: ${p => p.theme.radii.round};
 width: 12px;
 height:12px;
 background-color: ${(p) => {
-//    switch (p.isOnline) {
-//        case true:
-//            return "green";
-//        case false:
-//            return "red";
-//    default: return "#fff"
+    //    switch (p.isOnline) {
+    //        case true:
+    //            return "green";
+    //        case false:
+    //            return "red";
+    //    default: return "#fff"
    
-//    }
+    //    }
     ////////////////////////
-  return  p.isOnline ? "green" : "red"
-}}
-`
+    return p.isOnline ? "green" : "red"
+  }}
+`;
