@@ -5,7 +5,7 @@ export const StatsTitle = styled.h1`
 width:250px;
 margin: 0;
 text-align: center;
-background: ${p => p.theme.colors.white}
+background: ${p => p.theme.colors.white};
 `
 
 export const InfoBox = styled.ul`

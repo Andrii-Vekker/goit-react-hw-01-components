@@ -3,10 +3,10 @@ import './App.css';
 import Profile from './components/profile/profile';
 import Statistics from "./components/statistics/Statistics"
 import FriendsList from 'components/friends/friends';
-import user from "./user.json"
-import data from "./data.json"
-import friends from "./friends.json"
-import items from "./transactions.json"
+import user from "../src/data/user.json"
+import data from "../src/data/data.json"
+import friends from "../src/data/friends.json"
+import items from "../src/data/transactions.json"
 import { TransactionHistory } from 'components/transactions/transactions';
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
         stats={user.stats}
       />
       <Statistics
-       dataStat = {data}
+        title="Upload stats" 
+       stats = {data}
       />
       <FriendsList friends={friends} />
       <TransactionHistory items={items}/>

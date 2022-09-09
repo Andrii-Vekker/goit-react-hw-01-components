@@ -6,11 +6,11 @@ export default function FriendsList({ friends }) {
    
     return (
         <Box mt="30px" mb={5}>
-            {friends.map(i => (
-                <FriendsListItem key={i.id}>
-                    <IsOnlineChecker isOnline={i.isOnline}></IsOnlineChecker>
-                    <img src={i.avatar} alt="User avatar" width="48" />
-                    <p>{i.name}</p>
+            {friends.map(({id, isOnline, avatar, name}) => (
+                <FriendsListItem key={id}>
+                    <IsOnlineChecker isOnline={isOnline}></IsOnlineChecker>
+                    <img src={avatar} alt="User avatar" width="48" />
+                    <p>{name}</p>
                 </FriendsListItem>
             ))}
         </Box>
