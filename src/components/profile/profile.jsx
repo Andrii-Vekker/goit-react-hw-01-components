@@ -7,7 +7,7 @@ import { Card, UserPhoto, Stats, StatsItem, Title, Info } from "./profile.styled
 
 export default function Profile({username, tag, location, avatar=image, stats}) {
     return (
-        <Box bg="background" width="250px" p={4}>
+        <Box bg="background" width="250px" p={4} boxShadow="shadow" mb={5}>
             <Card>
                 <UserPhoto
                     src={avatar}

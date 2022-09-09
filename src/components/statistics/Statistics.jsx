@@ -8,10 +8,10 @@ export default function Statistics({dataStat}) {
         <Box bg="background" width="250px" p={4} mt={3}>
             <StatsTitle>Upload stats</StatsTitle>
             <InfoBox>
-                {dataStat.map(i => ( 
-                    <Info  style={{background: getRandomHexColor()}} key={i.id}>
-                        <span>{i.label}</span>
-                        <span>{i.percentage}</span>
+                {dataStat.map(({id, label, percentage}) => ( 
+                    <Info  style={{background: getRandomHexColor()}} key={id}>
+                        <span>{label}</span>
+                        <span>{percentage}</span>
                     </Info>
                 ))}
             </InfoBox>
@@ -24,5 +24,4 @@ Statistics.propTypes = {
     id: PropTypes.string,
     label: PropTypes.string,
     percentage: PropTypes.number
-
 };

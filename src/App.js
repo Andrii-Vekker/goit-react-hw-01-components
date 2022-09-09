@@ -6,6 +6,8 @@ import FriendsList from 'components/friends/friends';
 import user from "./user.json"
 import data from "./data.json"
 import friends from "./friends.json"
+import items from "./transactions.json"
+import { TransactionHistory } from 'components/transactions/transactions';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
       <Statistics
        dataStat = {data}
       />
-      <FriendsList friends={friends}/>
+      <FriendsList friends={friends} />
+      <TransactionHistory items={items}/>
     </div>
   );
 };

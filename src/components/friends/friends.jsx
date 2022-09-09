@@ -5,7 +5,7 @@ import { FriendsListItem, IsOnlineChecker } from "../friends/friends.styled";
 export default function FriendsList({ friends }) {
    
     return (
-        <Box mt="30px">
+        <Box mt="30px" mb={5}>
             {friends.map(i => (
                 <FriendsListItem key={i.id}>
                     <IsOnlineChecker isOnline={i.isOnline}></IsOnlineChecker>
